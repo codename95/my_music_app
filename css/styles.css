@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    appearance: none;
+}
+
+body {
+    height: 100vh;
+    background: rgb(192, 192, 192);
+    font-family: 'Cairo', sans-serif;
+}
+
+.wrapper{
+    background: white;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 12px
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    font-family: 'Cairo' sans-serif;
+}
+
+
+.header img{
+    height: 30px;
+    padding-right: 10px;
+}
+
+#error{
+    visibility: hidden;
+    color:  rgb(139, 24, 24);
+    font-size: medium;
+    text-align: center;
+}
+
+
+.main_header p{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 20px;
+    height: 40px;
+    background: rgb(121, 116, 116);
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Cairo', sans-serif;
+}
+
+form{
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+label{
+    color: #060f09;
+}
+
+input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.main, .row{
+    width: 100%;
+    margin-top: 0px;
+    margin-top: 0px;
+ }
+
+.btn_add
+{
+    border-radius: 4px;
+    background-color: #0FA0FF;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: right;
+    display: block;
+    margin-top: 10px;
+}
+
+.list_track
+{
+    margin: 15px;
+    background: rgb(242, 237, 237);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #000;
+}
+
+.track_title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.artist_name
+{
+    color: rgb(168, 151, 151);
+}
+
+.footer{
+    text-align: center;
+    padding: 40px;
+    font-size: 15px;
+    margin: 40px;
+}
+
+@media all and (min-width: 500px){
+
+    .wrapper
+    {
+        width: 90%;
+        border-radius: 12px;
+        margin: 50px 50px 0 50px;
+    }
+
+    .header{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Cairo' sans-serif;
+    }
+    
+    .main{
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin: 0;
+       margin-top: 0px;
+       padding: 0px;
+    }
+    
+    .row
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_header {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    input{
+        width: 100%;
+        font-weight: 400;
+        padding: 8px 10px;
+        border-radius: 5px;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+    
+    .main_header p {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

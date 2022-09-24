@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>My Music App</title>
+
+    <!-- Link the Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+     <!-- Meta tags for Apple Devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="My Music App" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#000000" />
+    
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+
+
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img src="/img/logo.png" alt="music_app" />
+        <h1>My Music App</h1>
+      </header>
+      <div class="main">
+        <div class="row">
+          <div class="main_header">
+            <p>NEW SONG</p>
+          </div>
+          <form id="app_form">
+            <div class="row">
+              <label class="lbl" for="txt_title">Title</label>
+              <input id="txt_title" type="text" />
+            </div>
+
+            <div class="row">
+              <label class="lbl" for="txt_artist">Artist</label>
+              <input id="txt_artist" type="text" />
+            </div>
+            <div id="error">error messages here...</div>
+
+            <div>
+              <button type="button" onclick='saveData()' class="btn_add">Add</button>
+            </div>
+            <br />
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="main_header">
+            <p>LIST OF SONGS</p>
+          </div>
+
+           <!-- Show Tracks Here -->
+          <div id="tracks">
+            
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>Salem Kosemani</p>
+      </footer>
+    </div>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
